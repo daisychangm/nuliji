@@ -5,12 +5,46 @@ ul {
 }
 
 li {
-    margin: 30px 20px;
+    margin: 20px 20px;
 }
 
 .btn {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
     height:48px;
     width:48px;
     padding: 0;
+    border: none;
+    outline: none;
     text-align: center;
 }
+
+.btn-home {
+    background-image: url('images/icons/home-icon-c.png');
+}
+
+.btn-gadgets {
+    background-image: url('images/icons/closed-decor-icon.png');
+}
+
+.btn-theme {
+    background-image: url('images/icons/themes-icon-c.png');
+}
+
+.btn-profile {
+    background-image: url('images/icons/profile-icon-c.png');
+}
+
+.btn-friends {
+    background-image: url('images/icons/friends-icon-c.png');
+}
+
+.btn-settings {
+    background-image: url('images/icons/settings-icon-c.png');
+}
+
+.btn-avatar {
+    background-image: url('images/icons/customization-icon-c.png');
+}
+
