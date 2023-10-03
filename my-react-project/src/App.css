@@ -51,22 +51,33 @@ li {
   background-color: transparent;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
   height:48px;
   width:48px;
   padding: 0;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+#active {
+  background-color: #C0DBE1;
+}
+
+#active-decor {
+  background-color: #C0DBE1;
+  background-image: url('images/icons/open-decor-icon.png');
 }
 
 .btn-home {
   background-image: url('images/icons/home-icon-c.png');
 }
 
-.btn-gadgets {
+.btn-decor {
   background-image: url('images/icons/closed-decor-icon.png');
 }
 
-.btn-theme {
+.btn-themes {
   background-image: url('images/icons/themes-icon-c.png');
 }
 
