@@ -1,0 +1,87 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 20px 20px;
+}
+
+.btn {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  height:48px;
+  width:48px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.btn-home {
+  background-image: url('images/icons/home-icon-c.png');
+}
+
+.btn-gadgets {
+  background-image: url('images/icons/closed-decor-icon.png');
+}
+
+.btn-theme {
+  background-image: url('images/icons/themes-icon-c.png');
+}
+
+.btn-profile {
+  background-image: url('images/icons/profile-icon-c.png');
+}
+
+.btn-friends {
+  background-image: url('images/icons/friends-icon-c.png');
+}
+
+.btn-settings {
+  background-image: url('images/icons/settings-icon-c.png');
+}
+
+.btn-avatar {
+  background-image: url('images/icons/customization-icon-c.png');
+}
