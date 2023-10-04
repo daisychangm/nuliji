@@ -47,6 +47,18 @@ li {
   margin: 20px 20px;
 }
 
+img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: auto;
+}
+
+h1 {
+  margin-top: 25vh;
+  margin-bottom:0%;
+}
+
 .btn {
   background-color: transparent;
   background-size: cover;
@@ -95,4 +107,27 @@ li {
 
 .btn-avatar {
   background-image: url('images/icons/customization-icon-c.png');
+}
+
+.startButton {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  height:50px;
+  width:88px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-image 0s;
+  background-image: url('images/start-default.png');
+}
+
+.startButton:hover {
+  background-image: url('images/start-hover.png');
 }

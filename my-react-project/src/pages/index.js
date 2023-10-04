@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import NavRouter from '../NavRouter'
+import { Link } from 'react-router-dom';
+
+// Images
+import logo from '../images/logo.png';
  
 const StartPage = () => {
     return (
         <div>
-            <h1>Welcome to Nuliji!</h1>
+            <h1 style={{textAlign: 'center'}}>welcome to</h1>
+            <img src={logo} alt="Logo image" />
             <Link to="/Home">
-                <button>Begin</button>
+                <button className='startButton'></button>
             </Link>
         </div>
     );
