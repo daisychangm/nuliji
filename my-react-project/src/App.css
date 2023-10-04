@@ -60,6 +60,7 @@ h1 {
 }
 
 .btn {
+  display: flex;
   background-color: transparent;
   background-size: cover;
   background-position: center;
@@ -110,17 +111,11 @@ h1 {
 }
 
 .startButton {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  align-items: center;
-  align-content: center;
   background-color: transparent;
   background-size: cover;
   background-position: center;
   height:50px;
   width:88px;
-  padding: 0;
   border: none;
   outline: none;
   cursor: pointer;
