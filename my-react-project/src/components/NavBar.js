@@ -1,6 +1,9 @@
 import React, { useEffect, useState} from 'react';
 import { Link, useLocation } from 'react-router-dom'
 
+// Components
+import DecorToggle from './DecorToggle';
+
 function NavBar() {
     const location = useLocation();
     const [activeButton, setActiveButton] = useState('');
@@ -13,13 +16,14 @@ function NavBar() {
     return (
         <div className="navbar">
             <ul>
-                <li><Link to="/">
-                        <button className="btn btn-home" ID={activeButton === '/' ? 'active' : ''}></button>
+                <li><Link to="/Home">
+                        <button className="btn btn-home" ID={activeButton === '/Home' ? 'active' : ''}></button>
                     </Link></li>
-                <li><Link to="/Decor">
+                <li><Link to={activeButton === '/Decor' ? '/Home' : '/Decor'}>
                         <button className="btn btn-decor" ID={activeButton === '/Decor' ? 'active-decor' : ''}></button>
                     </Link></li>
-                <li><Link to="Themes">
+                <DecorToggle>
+                <li><Link to="/Themes">
                         <button className="btn btn-themes" ID={activeButton === '/Themes' ? 'active' : ''}></button>
                     </Link></li>
                 <li><Link to="/Profile">
@@ -31,6 +35,7 @@ function NavBar() {
                 <li><Link to="/Settings">
                         <button className="btn btn-settings" ID={activeButton === '/Settings' ? 'active' : ''}></button>
                     </Link></li>
+                </DecorToggle>
             </ul>
         </div>
     );

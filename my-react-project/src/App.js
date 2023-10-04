@@ -1,20 +1,29 @@
 import './App.css';
-import NavBar from './NavBar';
-import { BrowserRouter as Router, Routes, Route }
-from 'react-router-dom';
-import Home from './pages';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Pages
+import StartPage from './pages';
+import Home from './pages/Home';
 import Decor from './pages/Decor'
 import Themes from './pages/Themes'
 import Profile from './pages/Profile'
 import Friends from './pages/Friends'
 import Settings from './pages/Settings'
 
+//Components
+import NavBar from './components/NavBar';
+import NavBarToggle from './components/NavBarToggle'
+
 function App() {
   return (
     <Router>
-      <NavBar />
+      <NavBarToggle>
+        <NavBar />
+      </NavBarToggle>
+
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<StartPage />} />
+        <Route path='/Home' element={<Home />} />
         <Route path='/Decor' element={<Decor />} />
         <Route path='/Themes' element={<Themes />} />
         <Route path='/Profile' element={<Profile />} />
