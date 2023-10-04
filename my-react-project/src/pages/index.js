@@ -19,10 +19,10 @@ const StartPage = () => {
 
     return (
         <div className='flex items-center flex-col'>
-            <h1 className=''>welcome to</h1>
-            <img src={logo} />
+            <h1>welcome to</h1>
+            <img src={logo} style={{display: 'block', margin: 'auto', width: '350px', height: 'auto' }}/>
 
-            <div className='w-20'>
+            <div className='w-40'>
                 <Link to="/Home">
                     <button>
                         <img 
