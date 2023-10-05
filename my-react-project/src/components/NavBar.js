@@ -17,23 +17,23 @@ function NavBar() {
         <div className="navbar">
             <ul>
                 <li><Link to="/Home">
-                        <button className="btn btn-home" ID={activeButton === '/Home' ? 'active' : ''}></button>
+                        <button className="btn btn-home" id={activeButton === '/Home' ? 'active' : ''}></button>
                     </Link></li>
                 <li><Link to={activeButton === '/Decor' ? '/Home' : '/Decor'}>
-                        <button className="btn btn-decor" ID={activeButton === '/Decor' ? 'active-decor' : ''}></button>
+                        <button className="btn btn-decor" id={activeButton === '/Decor' ? 'active-decor' : ''}></button>
                     </Link></li>
                 <DecorToggle>
                 <li><Link to="/Themes">
-                        <button className="btn btn-themes" ID={activeButton === '/Themes' ? 'active' : ''}></button>
+                        <button className="btn btn-themes" id={activeButton === '/Themes' ? 'active' : ''}></button>
                     </Link></li>
                 <li><Link to="/Profile">
-                        <button className="btn btn-profile" ID={activeButton === '/Profile' ? 'active' : ''}></button>
+                        <button className="btn btn-profile" id={activeButton === '/Profile' ? 'active' : ''}></button>
                     </Link></li>
                 <li><Link to="/Friends">
-                        <button className="btn btn-friends" ID={activeButton === '/Friends' ? 'active' : ''}></button>
+                        <button className="btn btn-friends" id={activeButton === '/Friends' ? 'active' : ''}></button>
                     </Link></li>
                 <li><Link to="/Settings">
-                        <button className="btn btn-settings" ID={activeButton === '/Settings' ? 'active' : ''}></button>
+                        <button className="btn btn-settings" id={activeButton === '/Settings' ? 'active' : ''}></button>
                     </Link></li>
                 </DecorToggle>
             </ul>

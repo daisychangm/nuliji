@@ -6,7 +6,7 @@ const NavBarToggle = ({children}) => {
     const [showNavBar, setShowNavBar] = useState(false);
 
         useEffect(() => {
-            setShowNavBar(location.pathname !== '/')
+            setShowNavBar(location.pathname !== '/' && location.pathname !== '/LogIn' && location.pathname !== '/SignUp')
         }, [location]);
     return showNavBar ? <div>{children}</div> : null;
 };

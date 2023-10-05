@@ -2,8 +2,10 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
-import StartPage from './pages';
-import Home from './pages/Home';
+import StartPage from './pages'
+import LogIn from './pages/LogIn'
+import SignUp from './pages/SignUp'
+import Home from './pages/Home'
 import Decor from './pages/Decor'
 import Themes from './pages/Themes'
 import Profile from './pages/Profile'
@@ -23,6 +25,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<StartPage />} />
+        <Route path='/LogIn' element={<LogIn />} />
+        <Route path='/SignUp' element={<SignUp />} />
         <Route path='/Home' element={<Home />} />
         <Route path='/Decor' element={<Decor />} />
         <Route path='/Themes' element={<Themes />} />
