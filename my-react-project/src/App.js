@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
 import StartPage from './pages'
+import Access from './pages/Access'
 import LogIn from './pages/LogIn'
 import SignUp from './pages/SignUp'
 import Home from './pages/Home'
@@ -25,6 +26,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<StartPage />} />
+        <Route path='/Access' element={<Access />} />
         <Route path='/LogIn' element={<LogIn />} />
         <Route path='/SignUp' element={<SignUp />} />
         <Route path='/Home' element={<Home />} />

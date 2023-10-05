@@ -23,7 +23,7 @@ const StartPage = () => {
             <img src={logo} style={{display: 'block', margin: 'auto', width: '350px', height: 'auto' }}/>
 
             <div className='w-40'>
-                <Link to="/LogIn">
+                <Link to="/Access">
                     <button>
                         <img 
                         src={buttonImage}

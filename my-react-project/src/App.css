@@ -111,20 +111,3 @@ textarea:focus, input:focus{
 .btn-avatar {
   background-image: url('images/icons/customization-icon-c.png');
 }
-
-.startButton {
-  background-color: transparent;
-  background-size: cover;
-  background-position: center;
-  height:50px;
-  width:88px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: background-image 0s;
-  background-image: url('images/start-default.png');
-}
-
-.startButton:hover {
-  background-image: url('images/start-hover.png');
-}

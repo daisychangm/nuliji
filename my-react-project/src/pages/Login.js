@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const LogIn = () => {
+const LogIn = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+
+    // User Login info
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -37,7 +39,7 @@ const LogIn = () => {
             </form>
 
             <br />
-            Don't have an account? <Link to="/SignUp">Sign up here</Link>
+            Don't have an account? <button onClick={() => props.onFormSwitch('signup')}>Sign up here</button>
             
         </div>
     );

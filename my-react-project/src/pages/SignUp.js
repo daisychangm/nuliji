@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const SignUp = () => {
+const SignUp = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [username, setUsername] = useState('');
@@ -46,7 +46,7 @@ const SignUp = () => {
                     </Link>
                 </form>
                 <br />
-                Already have an account? <Link to="/LogIn">Log in here</Link>
+                Already have an account? <button onClick={() => props.onFormSwitch('login')}>Log in here</button>
             </div>
         </div>
     );
