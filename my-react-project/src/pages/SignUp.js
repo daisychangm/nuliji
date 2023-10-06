@@ -41,9 +41,7 @@ const SignUp = (props) => {
                             name='password'
                         />
                         <br />
-                        <Link to="/Home">
-                            <button type='submit' style={{ marginTop: '20px', paddingLeft: '10px', paddingRight: '10px', border: '5px solid black', borderRadius: '10px' }}>Enter</button>
-                        </Link>
+                            <button onClick={() => props.onFormSwitch('login')} type='submit' style={{ marginTop: '20px', paddingLeft: '10px', paddingRight: '10px', border: '5px solid black', borderRadius: '10px' }}>Enter</button>
                     </form>
                 </div>
                 <br />
