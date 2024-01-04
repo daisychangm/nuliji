@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'login-button-inactive': "url('./public/images/login-inactive.png')",
+        'login-button-active': "url('./public/images/login-active.png')",
       },
       fontFamily: {
         viga: ['var(--font-viga)']
+      },
+      colors: {
+        'stone-grey': '#e6e3dc',
       },
     },
   },

@@ -3,6 +3,10 @@ import { viga } from './ui/fonts'
 
 export default function Home() {
   return (
-    <h1 className={`${viga.className}`}>Welcome to Nuliji</h1>
+    <main className="min-h-screen flex justify-center items-center p-24">
+      <h1>
+        Welcome to Nuliji
+      </h1>
+    </main>
   )
 }
