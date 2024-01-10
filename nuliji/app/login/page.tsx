@@ -32,8 +32,8 @@ export default function LoginPage() {
         <div className="mx-auto mt-8">
           <LoginButton />
         </div>
-        <div className="flex items-center justify-center">
-          <p>Don't have an account? <a href="/signup">Sign up</a></p>
+        <div className="flex items-center justify-center pt-1">
+          <p>Don't have an account? <a href="/signup" className="text-link-blue">Sign up</a></p>
         </div>
       </div>
     </form>

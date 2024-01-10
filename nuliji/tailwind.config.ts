@@ -13,6 +13,8 @@ const config: Config = {
       },
       colors: {
         'stone-grey': '#e6e3dc',
+        'med-blue': '#7c9aa0',
+        'link-blue': '#78aed3',
       },
     },
   },
