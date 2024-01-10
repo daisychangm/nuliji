@@ -8,10 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'login-button-inactive': "url('./public/images/login-inactive.png')",
-        'login-button-active': "url('./public/images/login-active.png')",
-      },
       fontFamily: {
         viga: ['var(--font-viga)']
       },

@@ -1,8 +1,11 @@
-export default function HomePage() {
+import Image from 'next/image'
+import LoginButton from '../ui/login-button'
+
+export default function LoginPage() {
   return (
-    <form>
+    <form noValidate>
       <div className="flex h-screen justify-center flex-col">
-        <h1 className="pb-3">Log in</h1>
+        <h1 className="pb-3">Please log in to continue</h1>
         <div className="flex flex-col mx-auto">
           <label className="pb-1">Email</label>
           <input
@@ -26,17 +29,13 @@ export default function HomePage() {
             minLength={8}
           />
         </div>
-        <LoginButton />
+        <div className="mx-auto mt-8">
+          <LoginButton />
+        </div>
+        <div className="flex items-center justify-center">
+          <p>Don't have an account? <a href="/signup">Sign up</a></p>
+        </div>
       </div>
     </form>
   );
-}
-
-function LoginButton() {
-    return (
-      <div className="mx-auto mt-8">
-        <button className="rounded-lg bg-login-inactive hover:bg-login-active">
-        hi</button>
-      </div>
-    );
 }
